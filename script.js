@@ -2,4 +2,6 @@
 let student = {
 	name: "toshi"
 }
- console.log(student.getKeys())
+ Object.prototype.getKeys = function() {
+	 return Object.keys(this)
+ }
